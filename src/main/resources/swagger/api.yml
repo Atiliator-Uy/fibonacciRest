@@ -1,0 +1,67 @@
+openapi: 3.0.1
+info:
+  title: fibonacciRest
+  version: 0.0.1
+servers:
+  - url: http://localhost:8082/api
+    description: Development server
+  - url: https://localhost:8082/api
+    description: Development server with TLS Profile
+paths:
+  /enesimoFibonacci/{numeroFibonacci}:
+    get:
+      summary: Retorna un objeto Fibonacci
+      parameters:
+        - in: path
+          name: numeroFibonacci
+          schema:
+            type: integer
+          required: true
+          description: Numero a consultar
+      description: Retorna un objeto Fibonacci con su enesimo valor y cantidad de consultas Rest.
+      responses:
+        '200':
+          description: Objeto Fibonacci.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/fibonacci'
+        '400':
+          description: Bad Request
+        '404':
+          description: No es un numero fibonacci
+components:
+#  responses:
+#    Problem:
+#      description: >-
+#        error occurred - see status code and problem object for more
+#        information.
+#      content:
+#        application/problem+json:
+#          schema:
+#            $ref: https://opensource.zalando.com/problem/schema.yaml#/Problem
+  schemas:
+    fibonacci:
+      properties:
+        id:
+          type: integer
+          description: ID de persistencia Fibonacci
+        numeroFibonacci:
+          type: integer
+          description: Numero consultado
+        enesimo:
+          type: integer
+          description: enesimo valor
+        contadorRest:
+          type: integer
+          description: Cantidad de veces consultado
+  securitySchemes:
+    jwt:
+      type: http
+      description: JWT Authentication
+      scheme: bearer
+      bearerFormat: JWT
+security:
+  - jwt: []

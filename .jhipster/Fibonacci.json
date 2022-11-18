@@ -1,0 +1,30 @@
+{
+    "name": "Fibonacci",
+    "fields": [
+        {
+            "fieldName": "numeroFibonacci",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enesimo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contadorRest",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20221117175000",
+    "entityTableName": "fibonacci",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "fibonacciRest",
+    "applications": "*",
+    "microserviceName": "fibonacciRest"
+}

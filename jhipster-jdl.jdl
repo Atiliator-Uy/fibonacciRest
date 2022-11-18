@@ -1,0 +1,15 @@
+/* Microservicio inspeciones */
+/* Entity */
+entity Fibonacci {
+	numeroFibonacci Integer,
+    enesimo Integer,
+    contadorRest Integer
+}
+
+paginate Fibonacci with pagination
+dto * with mapstruct
+service all with serviceClass
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

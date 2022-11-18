@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.uy.atiliator.fibonacci.rest",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "microservice",
+    "baseName": "fibonacciRest",
+    "packageName": "com.uy.atiliator.fibonacci.rest",
+    "packageFolder": "com/uy/atiliator/fibonacci/rest",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ZjM4MDdhOTdlYzllY2UyZmE1OGRlZWM3NzdmZTg3OTBlMjcyZDJhOTkxZDJjMTk1MDgwNjNhNGU4YTBkZjI4MTc2N2I5ZmFkNDQwYmE5ZThiYWIyZDViN2M3Y2YyNDI0OWE5OTk5ZmRkYTVhNTYxOWUzYTMwZDY1YTQ1NWMwMzM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1668697274431,
+    "testFrameworks": ["gatling"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "es",
+    "languages": ["es", "en"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
